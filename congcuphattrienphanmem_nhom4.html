@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Store</title>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="./nhom4.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header id="header">
+                <section class="marRal">
+                    <section id="headerCenter">
+                        <div class="logo">
+                            <img src="./logo.png"/>
+                        </div>
+        
+                        <div class="searchBar">
+                            <input type="text" class="searchInput" placeholder="Search"/>
+                            <a href="#" class="buttonIcon">
+                                <i class="fas fa-search searchIcon"></i>
+                            </a>
+                        </div>
+
+                        <div class="buyLogIn">
+                            <div class="buyProducts">
+                                <a href="#" class="user-click">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span>Giỏ hàng</span>
+                                </a>
+                            </div>
+
+                            <div class="logInOut">
+                                <a href="#" class="user-click" id="logIn">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                    <span>Đăng nhập</span>
+                                </a>
+
+                                <a href="#" class="user-click">
+                                    <i class="fas fa-user"></i>
+                                    <span>Đăng kí</span>
+                                </a>
+                            </div>
+
+                            <div class="content-logIn">
+                                <div class="content-lg">
+                                    <form id="formLogIn" action="" method="GET" >
+                                        <p class="label-logIn">User Login</p>
+
+                                        <div class="input-lg">
+                                            <div>
+                                                <i class="fas fa-user"></i>
+                                                <input type="text" placeholder="User Name" name="name" id="idName"/>
+                                                
+                                            </div>
+                                            <span id="nameError"></span>
+
+                                            <div>
+                                                <i class="fas fa-lock"></i>
+                                                <input type="password" placeholder="Password" name="password" id="pass"/>
+                                                
+                                            </div>
+                                            <span id="passError"></span>
+
+                                                <p><a href="#" target="blank">Forgot your password</a></p>
+                                            
+                                            <div>
+                                                <button id="completeLog" type="button" onclick="checkId()">Sign In</button>
+                                                <button id="canCel">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>  
+                    </section>
+
+                   
+                </section>
+
+                <nav id="nav">
+                    <div class="marRal">
+                        <ul class="menuPros">
+                            <li><a href="#">Trang Chủ</a></li>
+                            <li>
+                                <a href="#">Sản Phẩm</a>
+                                
+                                <div class="smenu">
+                                    <ul class="smenu-pros">
+                                        <li><a href="#">Thiết bị điện tử</a></li>
+
+                                        <div class="item-pro">
+                                            <li><a href="#">Điện thoại</a></li>
+                                            <li><a href="#">Máy tính</a></li>
+                                            <li><a href="#">Laptop</a></li>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="smenu-pros">
+                                        <li><a href="#">Tivi và thiết bị giá dụng</a></li>
+
+                                        <div class="item-pro">
+                                            <li><a href="#">TV & Video</a></li>
+                                            <li><a href="#">Đồ gia dụng nhỏ</a></li>
+                                            <li><a href="#">Đồ gia dụng lớn</a></li>
+                                        </div>
+                                    </ul>
+
+                                    <ul class="smenu-pros">
+                                        <li><a href="#">Phụ kiện điện tử</a></li>
+
+                                        <div class="item-pro">
+                                            <li><a href="#">Phụ kiện và máy chơi game</a></li>
+                                            <li><a href="#">Thiết bị thông minh</a></li>
+                                            <li><a href="#">Thiết bị khác</a></li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Kiểm Tra Bảo Hành</a></li>
+                            <li><a href="#">Liên Hệ</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+    
+            <main id="container">
+                <div class="marRal" id="section-content">
+                    <nav id="left-container" >
+                        <div class="nav-menu">
+                            <li class="item" id="tbdt">
+                                <a href="#tbdt"><i class="fas fa-laptop"></i>Thiết bị điện tử</a>
+
+                                <div class="nav-second">
+                                    <a href="#">Điện thoại</a>
+                                    <a href="#">Máy tính</a>
+                                    <a href="#">Laptop</a>
+                                    <a href="#">Máy tính để bàn</a>
+                                    <a href="#">Camera</a>
+                                    <a href="#">Máy ảnh</a>
+                                </div>
+                            </li>
+
+                            <li class="item" id="tv">
+                                <a href="#tv"><i class="fas fa-tv"></i>Tivi và thiết bị giá dụng</a>
+
+                                <div class="nav-second">
+                                    <a href="#">TV & Video</a>
+                                    <a href="#">Đồ gia dụng nhỏ</a>
+                                    <a href="#">Đồ gia dụng lớn</a>
+                                    <a href="#">Phụ kiện TV</a>
+                                </div>
+                            </li>
+
+                            <li class="item" id="pkdt">
+                                <a href="#pkdt"><i class="fas fa-gamepad"></i>Phụ kiện điện tử</a>
+
+                                <div class="nav-second">
+                                    <a href="#">Phụ kiện và máy chơi game</a>
+                                    <a href="#">Thiết bị thông minh</a>
+                                    <a href="#">Thiết bị khác</a>
+                                </div>
+                            </li>
+                        </div>
+                    </nav>
+
+                    <section id="right-container">
+                        <!-- <div class="products-list">
+
+                        </div> -->
+                    </section>
+                </div>
+               
+            </main>
+        </div>
+
+        <script src="./nhom4_login.js"></script>
+        <script src="./nhom4_products.js"></script>
+    </body>
+</html>
