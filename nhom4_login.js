@@ -2,17 +2,20 @@ var btnLogIn = document.getElementById('logIn');
 var contentShow = document.getElementsByClassName('content-logIn')[0];
 var btnCanCel = document.getElementById('canCel');
 var comLog = document.getElementById('completeLog');
+var filter = document.getElementById('wrapper');
 
 
 
 btnLogIn.addEventListener('click', function() {
     contentShow.setAttribute('class', 'content-logIn content-display');
+    filter.setAttribute('class', 'opacityFilter');
 });
 
 
 
 btnCanCel.addEventListener('click', function() {
     contentShow.setAttribute('class', 'content-logIn');
+    filter.setAttribute('class', '');
 });
 
 

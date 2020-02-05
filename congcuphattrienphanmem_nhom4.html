@@ -44,36 +44,7 @@
                                 </a>
                             </div>
 
-                            <div class="content-logIn">
-                                <div class="content-lg">
-                                    <form id="formLogIn" action="" method="GET" >
-                                        <p class="label-logIn">User Login</p>
-
-                                        <div class="input-lg">
-                                            <div>
-                                                <i class="fas fa-user"></i>
-                                                <input type="text" placeholder="User Name" name="name" id="idName"/>
-                                                
-                                            </div>
-                                            <span id="nameError"></span>
-
-                                            <div>
-                                                <i class="fas fa-lock"></i>
-                                                <input type="password" placeholder="Password" name="password" id="pass"/>
-                                                
-                                            </div>
-                                            <span id="passError"></span>
-
-                                                <p><a href="#" target="blank">Forgot your password</a></p>
-                                            
-                                            <div>
-                                                <button id="completeLog" type="button" onclick="checkId()">Sign In</button>
-                                                <button id="canCel">Cancel</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
+                            
                         </div>  
                     </section>
 
@@ -94,12 +65,13 @@
                                         <div class="item-pro">
                                             <li><a href="#">Iphone</a></li>
                                             <li><a href="#">Samsung</a></li>
+                                            <li><a href="#">OPPO</a></li>
                                             <li><a href="#">Hãng khác</a></li>
                                         </div>
                                     </ul>
 
                                     <ul class="smenu-pros">
-                                        <li><a href="#">Laptop & tablet</a></li>
+                                        <li><a href="#">Laptop & Tablet</a></li>
 
                                         <div class="item-pro">
                                             <li><a href="#">Ipad</a></li>
@@ -131,49 +103,87 @@
                     <nav id="left-container" >
                         <div class="nav-menu">
                             <li class="item" id="tbdt">
-                                <a href="#tbdt"><i class="fas fa-laptop"></i>Thiết bị điện tử</a>
+                                <a href="#tbdt"><i class="fas fa-mobile"></i>Điện thoại</a>
 
                                 <div class="nav-second">
-                                    <a href="#">Điện thoại</a>
-                                    <a href="#">Máy tính</a>
-                                    <a href="#">Laptop</a>
-                                    <a href="#">Máy tính để bàn</a>
-                                    <a href="#">Camera</a>
-                                    <a href="#">Máy ảnh</a>
+                                    <a href="#">Iphone</a>
+                                    <a href="#">Samsung</a>
+                                    <a href="#">OPPO</a>
+                                    <a href="#">Hãng khác</a>
                                 </div>
                             </li>
 
                             <li class="item" id="tv">
-                                <a href="#tv"><i class="fas fa-tv"></i>Tivi và thiết bị giá dụng</a>
+                                <a href="#tv"><i class="fas fa-laptop"></i>Laptop & Tablet</a>
 
                                 <div class="nav-second">
-                                    <a href="#">TV & Video</a>
-                                    <a href="#">Đồ gia dụng nhỏ</a>
-                                    <a href="#">Đồ gia dụng lớn</a>
-                                    <a href="#">Phụ kiện TV</a>
+                                    <a href="#">Ipad</a>
+                                    <a href="#">Laptop Gaming</a>
+                                    <a href="#">Laptop doanh nhân-Workstation</a>
                                 </div>
                             </li>
 
                             <li class="item" id="pkdt">
-                                <a href="#pkdt"><i class="fas fa-gamepad"></i>Phụ kiện điện tử</a>
+                                <a href="#pkdt"><i class="fas fa-gamepad"></i>Phụ kiện</a>
 
                                 <div class="nav-second">
-                                    <a href="#">Phụ kiện và máy chơi game</a>
-                                    <a href="#">Thiết bị thông minh</a>
-                                    <a href="#">Thiết bị khác</a>
+                                    <a href="#">Phụ kiện điện thoại</a>
+                                    <a href="#">Phụ kiện máy tính</a>
+                                    <a href="#">Phụ kiện khác</a>
                                 </div>
                             </li>
                         </div>
                     </nav>
 
                     <section id="right-container">
-                        <!-- <div class="products-list">
+                        <div class="nav-other">
+                            <div id="productsMenu">
 
-                        </div> -->
+                            </div>
+    
+                            <div id="productsMenu1">
+                                
+                            </div>
+
+                            <div id="productsMenu2">
+                                 
+                            </div>
+                        </div>
                     </section>
                 </div>
                
             </main>
+        </div>
+
+        <div class="content-logIn">
+            <div class="content-lg">
+                <form id="formLogIn" action="" method="GET" >
+                    <p class="label-logIn">User Login</p>
+
+                    <div class="input-lg">
+                        <div>
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="User Name" name="name" id="idName"/>
+                            
+                        </div>
+                        <span id="nameError"></span>
+
+                        <div>
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password" name="password" id="pass"/>
+                            
+                        </div>
+                        <span id="passError"></span>
+
+                            <p><a href="#" target="blank">Forgot your password</a></p>
+                        
+                        <div>
+                            <button id="completeLog" type="button" onclick="checkId()">Sign In</button>
+                            <button id="canCel">Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <script src="./nhom4_login.js"></script>
