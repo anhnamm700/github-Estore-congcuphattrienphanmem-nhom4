@@ -15,7 +15,7 @@ btnLogIn.addEventListener('click', function() {
 
 btnCanCel.addEventListener('click', function() {
     contentShow.setAttribute('class', 'content-logIn');
-    filter.setAttribute('class', '');
+    filter.setAttribute('class', 'blockDisplay');
 });
 
 
@@ -35,11 +35,11 @@ function checkId() {
         nameEr.innerHTML = '*Tài khoản không được để trắng';
     }
 
-    if(idName.length >= 1&&idName.length < 10) {
-        nameEr.innerHTML = '*Tài khoản phải có ít nhất 10 kí tự';
+    if(idName.length >= 1&&idName.length < 6) {
+        nameEr.innerHTML = '*Tài khoản phải có ít nhất 6 kí tự';
     }
 
-    if(idName.length >= 10) {
+    if(idName.length >= 6) {
         nameEr.innerHTML = '';
     }
 
@@ -57,9 +57,10 @@ function checkId() {
         passEr.innerHTML = '';
     }
 
-    if(idName.length >= 10 && pass.length >= 6) {
+    if(idName.length >= 6 && pass.length >= 6) {
         alert('Bạn đã đăng nhập thành công');
         contentShow.setAttribute('class', 'content-logIn');
+        filter.setAttribute('class', 'blockDisplay');
     } else {
         contentShow.setAttribute('class', 'content-logIn content-display');
     }

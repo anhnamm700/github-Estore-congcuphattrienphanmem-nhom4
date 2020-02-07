@@ -240,6 +240,10 @@
     user-select: none;
 }
 
+.blockDisplay {
+    filter: none;
+}
+
 .content-logIn .content-lg {
     
     text-align: center;
