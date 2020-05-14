@@ -4,6 +4,10 @@
     font-family: tahoma, sans-serif;
 }
 
+.clear {
+    clear: both;
+}
+
 *, *::after, *::before {
     box-sizing: border-box;
 }
@@ -342,6 +346,120 @@
 #nameError, #passError {
     color: red;
     font-size: 12px;
+}
+
+
+/***
+LOG ON
+*/
+
+/* .formLgon {
+    width: 400px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+} */
+
+.disable {
+    display: none;
+}
+
+.unableDis {
+    display: block;
+    width: 500px; 
+    /* height: 400px; */
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    z-index: 6;
+    background-color: #fafafa;
+    animation: upDown linear .3s;
+}
+
+@keyframes upDown {
+    from{
+        top: 10px;
+        opacity: 0;
+    }
+
+    to{
+        top: 20%;
+        opacity: 1;
+    }
+}
+
+.formLgon .content-lgon {
+    
+} 
+
+#formLogOn {
+    position: absolute;
+    border: 1px blue solid;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+  
+}
+
+
+
+#formLogOn  p {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: #0984e3;
+}
+
+#formLogOn  i {
+    position: absolute;
+    right: 26px;
+    top: 30px;
+    cursor: pointer;
+}
+
+#formLogOn  i:hover {
+    color: red;
+}
+
+#formLogOn .input-lgOn {
+    display: flex;
+    flex-direction: column;
+}
+
+#formLogOn .input-lgOn div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+
+#formLogOn .input-lgOn div label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+#formLogOn .input-lgOn div input {
+    width: 300px;
+    height: 30px;
+    padding-left: 12px;
+}
+
+#formLogOn  button {
+    width: 100px;
+    height: 30px;
+    color: #d63031;
+    background-color: #ebebeb;
+    border: 1px #ccc solid;
+    cursor: pointer;
+}
+
+#formLogOn  button:hover {
+    background-color: #3498db;
+    color: #ecf0f1;
 }
 
 

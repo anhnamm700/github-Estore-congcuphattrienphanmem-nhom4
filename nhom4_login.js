@@ -35,29 +35,16 @@ function checkId() {
         nameEr.innerHTML = '*Tài khoản không được để trắng';
     }
 
-    if(idName.length >= 1&&idName.length < 6) {
-        nameEr.innerHTML = '*Tài khoản phải có ít nhất 6 kí tự';
-    }
-
-    if(idName.length >= 6) {
-        nameEr.innerHTML = '';
-    }
-
+ 
     var pass = document.getElementById('pass').value;
     console.log(pass);
     if(!pass) {
        passEr.innerHTML = '*Bạn chưa nhập mật khẩu';
     }
+   
 
-    if(pass.length >= 1&&pass.length < 6) {
-        passEr.innerHTML = '*Mật khẩu phải có ít nhất 6 kí tự';
-    }
 
-    if(pass.length >= 6) {
-        passEr.innerHTML = '';
-    }
-
-    if(idName.length >= 6 && pass.length >= 6) {
+    if(idName&& pass) {
         alert('Bạn đã đăng nhập thành công');
         contentShow.setAttribute('class', 'content-logIn');
         filter.setAttribute('class', 'blockDisplay');
@@ -66,4 +53,50 @@ function checkId() {
     }
     
     
+}
+
+/**
+ * 
+ * Log on
+ * 
+ * * */
+
+
+var btnLogOn = document.getElementById("logOn");
+var btnExit = document.getElementsByClassName("exitLogOn")[0];
+var formLogOn = document.getElementsByClassName("formLgon")[0];
+
+btnLogOn.addEventListener('click', function() {
+    formLogOn.setAttribute('class', 'unableDis');
+    filter.setAttribute('class', 'opacityFilter');
+});
+
+btnExit.addEventListener('click', function() {
+    formLogOn.setAttribute('class', 'disable');
+    filter.setAttribute('class', 'blockDisplay');
+});
+
+/**
+ * Check ID & PASSWORD
+ */
+
+
+
+function checkUser() {
+
+    var nameUser = document.getElementById("nameUser").value;
+    var dateUser = document.getElementById("dateUser").value;
+    var addUser = document.getElementById("addUser").value;
+    var idUser = document.getElementById("idUser").value;
+    var passUser = document.getElementById("passUser").value;
+    var passUserAgain = document.getElementById("passUserAgain").value;
+    var phoneUser = document.getElementById("phoneUser").value;
+    var emailUser = document.getElementById("emailUser").value;
+
+
+
+    if(!nameUser || !dateUser || !addUser || !idUser || !passUser || !passUserAgain || !phoneUser || !emailUser) {
+        alert('Bạn chưa hoàn thành thông tin');
+    } 
+
 }

@@ -38,7 +38,7 @@
                                     <span>Đăng nhập</span>
                                 </a>
 
-                                <a href="#" class="user-click">
+                                <a href="#" class="user-click" id="logOn">
                                     <i class="fas fa-user"></i>
                                     <span>Đăng kí</span>
                                 </a>
@@ -187,6 +187,31 @@
                     </div>
                 </form>
             </div>
+        </div>
+
+        <div class="formLgon">
+            <div class="content-lgon">
+                <form id="formLogOn"  action="" method="GET">
+                    <p class="label-logIn">Create your account</p>
+                    <i class="fas fa-power-off exitLogOn"></i>
+                    <div class="input-lgOn">
+                        <div><label>Họ và tên</label><input type="text" placeholder="Họ tên" id="nameUser"/></div>
+                        <div><label>Ngày sinh</label><input type="date" id="dateUser" /></div>
+                        <div><label>Địa chỉ</label><input type="text" placeholder="Địa chỉ" id="addUser"/></div>
+                        <div><label>Tên tài khoản</label><input type="text" placeholder="Tên tài khoản" id="idUser"/></div>
+                        <div><label>Mật khẩu</label><input type="password" placeholder="Mật khẩu" id="passUser"/></div>
+                        <div><label>Nhập lại mật khẩu</label><input type="password" placeholder="Mật khẩu" id="passUserAgain"/></div>
+                        <div><label>Số điện thoại</label><input type="text" placeholder="Số điện thoại" id="phoneUser"/></div>
+                        <div><label>Email</label><input type="text" placeholder="Email" id="emailUser"/></div>
+                    </div>
+
+                    <button onclick="checkUser();">Đăng kí</button>
+                    
+
+                </form>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
         </div>
 
         <script src="./nhom4_login.js"></script>
